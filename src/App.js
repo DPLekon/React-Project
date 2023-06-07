@@ -61,12 +61,16 @@ function CalculatorInput() {
         <label>Result: {result}</label>
       </div>
         <div><Calculator/></div>
-        <div ><RandomImage /></div>
+        <div><RandomImage/></div>
         <div><RandomJoke/></div>
         <div><JokeComponent/></div>
     </div>
   );
 }
+
+// function randomNumber () {
+
+// }
 
 export default CalculatorInput;
 
