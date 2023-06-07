@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import RandomImage from './RandomImg';
 import RandomJoke from './RandomJoke';
 import JokeComponent from './JokeWithJson';
+import Calculator from './fullCalc';
 
 // Add two numbers
 function add(a, b) {
@@ -13,6 +14,7 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
+
 
 // Generate a random number between min and max (inclusive)
 function generateRandomNumber(min, max) {
@@ -58,6 +60,7 @@ function CalculatorInput() {
         <br />
         <label>Result: {result}</label>
       </div>
+        <div><Calculator/></div>
         <div ><RandomImage /></div>
         <div><RandomJoke/></div>
         <div><JokeComponent/></div>
