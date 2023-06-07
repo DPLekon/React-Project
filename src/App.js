@@ -1,6 +1,5 @@
 import './App.css';
-// import React, { useState } from 'react';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import RandomImage from './RandomImg';
 import RandomJoke from './RandomJoke';
 
@@ -16,7 +15,7 @@ function subtract(a, b) {
 
 // Generate a random number between min and max (inclusive)
 function generateRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max + min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function CalculatorInput() {
@@ -34,8 +33,10 @@ function CalculatorInput() {
   };
 
   const handleRandom = () => {
-    setResult(generateRandomNumber(numberA, numberB));
+    setResult(generateRandomNumber(1, 100));
   };
+
+  // const randomNumber = generateRandomNumber(1, 100);
 
   return (
     <div className="calculator-container">
