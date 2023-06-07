@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import RandomImage from './RandomImg';
 import RandomJoke from './RandomJoke';
+import JokeComponent from './JokeWithJson';
 
 // Add two numbers
 function add(a, b) {
@@ -59,6 +60,7 @@ function CalculatorInput() {
       </div>
         <div ><RandomImage /></div>
         <div><RandomJoke/></div>
+        <div><JokeComponent/></div>
     </div>
   );
 }
